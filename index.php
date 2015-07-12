@@ -37,8 +37,8 @@
                     $files[] = $file;
                 }
                 foreach ($files as $pic) {
-                    // print '<img src="' . $pic . '">';
                     print '<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="' . $pic . '">';
+                    print '<noscript><img src="' . $pic . '"></noscript>';
                 }
 
             ?>
