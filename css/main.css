@@ -119,9 +119,8 @@ p:first-child {
 
 img {
     display: block;
-    width: auto;
+    width: 100%;
     height: auto;
-    max-width: 100%;
     margin: auto;
 }
 
