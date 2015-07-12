@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>camera roll</title>
+        <title>cameraroll</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,7 +21,7 @@
 
         <!-- Add your site or application content here -->
         <header>
-            <p>camera roll</p>
+            <p>cameraroll</p>
             <p>photos by <a href='http://nathanwentworth.co'>nathan wentworth</a></p>
             <svg width="100" height="100" viewbox="0 0 200 200">
                 <circle cx="100" cy="100" r="80" stroke="#333" stroke-width="4"fill="#333" />
@@ -33,10 +33,13 @@
         <div class='content'>
             <?php
                 $files = array();
-                foreach (glob("/img/*.jpg") as $file) {
+                foreach (glob("img/*.jpg") as $file) {
                     $files[] = $file;
                 }
-                print $files[1];
+                foreach ($files as $pic) {
+                    print '<img src="' . $pic . '">';
+                }
+
             ?>
                 <img src="img/IMG_0031.jpg">
                 <img src="img/IMG_0069.jpg">
