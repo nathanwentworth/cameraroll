@@ -37,7 +37,8 @@
                     $files[] = $file;
                 }
                 foreach ($files as $pic) {
-                    print '<img src="' . $pic . '">';
+                    // print '<img src="' . $pic . '">';
+                    print '<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="' . $pic . '">';
                 }
 
             ?>
@@ -47,6 +48,15 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
  -->
+    <script>
+        function init() {
+        var imgDefer = document.getElementsByTagName('img');
+        for (var i=0; i<imgDefer.length; i++) {
+        if(imgDefer[i].getAttribute('data-src')) {
+        imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+        } } }
+        window.onload = init;
+    </script>
     <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
     </body>
 </html>
