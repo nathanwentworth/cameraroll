@@ -43,7 +43,7 @@
 
                 $j = count($smallimg);
                 for($i = 0; $i < $j ; $i++) {
-                    print '<img src="' . $smallimg[$i] . '" srcset="' . $smallimg[$i] . ' 480w,' . $defaultimg[$i] . ' 1000w">';
+                    print '<img src="' . $smallimg[$i] . '" srcset="' . $smallimg[$i] . ' 480w,' . $defaultimg[$i] . ' 1200w">';
                     print '<noscript><img src="' . $defaultimg[$i] . '"></noscript>';
 
                 }
