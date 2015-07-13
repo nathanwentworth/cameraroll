@@ -408,10 +408,10 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 1832,
+				"buffer_size": 2439,
 				"line_ending": "Unix"
 			}
 		},
@@ -419,7 +419,7 @@
 			"file": "css/main.css",
 			"settings":
 			{
-				"buffer_size": 5728,
+				"buffer_size": 6323,
 				"line_ending": "Unix"
 			}
 		}
@@ -431,10 +431,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 377.0,
-		"last_filter": "js",
+		"height": 398.0,
+		"last_filter": "php",
 		"selected_items":
 		[
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
 			[
 				"js",
 				"Set Syntax: JavaScript"
@@ -568,7 +572,7 @@
 				"Set Syntax: Python"
 			]
 		],
-		"width": 527.0
+		"width": 542.0
 	},
 	"console":
 	{
@@ -595,6 +599,10 @@
 	"file_history":
 	[
 		"/Users/nathan/Downloads/html5-boilerplate_v5/css/main.css",
+		"/Users/nathan/Dropbox/web-files/personal/nathanwentworth/portfolio/style.css",
+		"/Users/nathan/Dropbox/web-files/personal/cameraroll/index.html",
+		"/Users/nathan/Dropbox/web-files/personal/cameraroll/index.php",
+		"/Users/nathan/Dropbox/web-files/personal/nathanwentworth/portfolio/index.html",
 		"/Users/nathan/Downloads/html5-boilerplate_v5/css/normalize.css",
 		"/Users/nathan/Dropbox/web-files/personal/nathanwentworth/htaccess.htaccess",
 		"/Users/nathan/Dropbox/web-files/personal/nathanwentworth/404.html",
@@ -717,15 +725,11 @@
 		"/Users/nathan/Dropbox/Web Files/Snyder/item/bountifulfavorites.html",
 		"/Users/nathan/Dropbox/Web Files/Snyder/item/bountifulblessings.html",
 		"/Users/nathan/Dropbox/Web Files/Snyder/item/bonappetit.html",
-		"/Users/nathan/Dropbox/Web Files/Snyder/item/bearyhappybirthday.html",
-		"/Users/nathan/Dropbox/Web Files/Snyder/item/bathtime.html",
-		"/Users/nathan/Dropbox/Web Files/Snyder/item/babycarriage.html",
-		"/Users/nathan/Dropbox/Web Files/Snyder/item/americanhero.html",
-		"/Users/nathan/Dropbox/Web Files/Snyder/item/allaboutautumn.html"
+		"/Users/nathan/Dropbox/Web Files/Snyder/item/bearyhappybirthday.html"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -751,6 +755,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"b3d4fc",
+			"D1D1D1",
+			"180",
+			"190",
+			"200",
+			"file",
+			"files",
+			"100",
 			"email",
 			"img",
 			"border-rad",
@@ -870,15 +882,7 @@
 			"Fruitful Blessings Cornucopia",
 			"grand gathering",
 			"gourmet600s",
-			"bountifulfavorites",
-			"Bountiful Favorites",
-			"bountifulfavorites",
-			"Bountiful Favorites",
-			"fallharvest",
-			"Fall Harvest",
-			"allaboutautumn",
-			"All About Autumn",
-			"fabulousfall"
+			"bountifulfavorites"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -934,19 +938,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1832,
+						"buffer_size": 2439,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2082,
+								2082
 							]
 						],
 						"settings":
@@ -954,41 +958,26 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -999,26 +988,41 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 307.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1033,15 +1037,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5728,
+						"buffer_size": 6323,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								803,
+								809
 							]
 						],
 						"settings":
@@ -1049,41 +1053,26 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1094,26 +1083,41 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 27.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1188,15 +1192,15 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "port",
 		"selected_items":
 		[
 			[
-				"portfolop",
-				"~/Dropbox/Web Files/personal/nathanwentworth/portfolio/portfolio.sublime-workspace"
+				"port",
+				"~/Dropbox/web-files/personal/nathanwentworth/portfolio/portfolio.sublime-project"
 			],
 			[
-				"port",
+				"portfolop",
 				"~/Dropbox/Web Files/personal/nathanwentworth/portfolio/portfolio.sublime-workspace"
 			],
 			[
@@ -1259,7 +1263,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
