@@ -32,31 +32,23 @@
         </header>
         <div class='content'>
             <?php
-                $files = array();
-                foreach (glob("img/*.jpg") as $file) {
-                    $files[] = $file;
+                $smallimg = array();
+                foreach (glob("img/IMG_*-small.jpg") as $small) {
+                    $smallimg[] = $small;
                 }
-                foreach ($files as $pic) {
-                    print '<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="' . $pic . '">';
-                    print '<noscript><img src="' . $pic . '"></noscript>';
+                $defaultimg = array();
+                foreach (glob("img/IMG_*-large.jpg") as $default) {
+                    $defaultimg[] = $default;
                 }
 
+                $j = count($smallimg);
+                for($i = 0; $i < $j ; $i++) {
+                    print '<img src="' . $smallimg[$i] . '" srcset="' . $smallimg[$i] . ' 480w,' . $defaultimg[$i] . ' 1000w">';
+                    print '<noscript><img src="' . $defaultimg[$i] . '"></noscript>';
+
+                }
             ?>
         </div>
-<!--         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
- -->
-    <script>
-        function init() {
-        var imgDefer = document.getElementsByTagName('img');
-        for (var i=0; i<imgDefer.length; i++) {
-        if(imgDefer[i].getAttribute('data-src')) {
-        imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-        } } }
-        window.onload = init;
-    </script>
-    <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
     </body>
 </html>
