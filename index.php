@@ -21,14 +21,14 @@
 
         <!-- Add your site or application content here -->
         <header>
-            <p>cameraroll</p>
-            <p>photos by <a href='http://nathanwentworth.co'>nathan wentworth</a></p>
             <svg width="100" height="100" viewbox="0 0 200 200">
                 <circle cx="100" cy="100" r="80" stroke="#333" stroke-width="4"fill="#333" />
                 <g fill="none" stroke="#eee" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M40 120 L58 80 L82 120 L100 80 L115 120 L130 80 L145 120 L160 80" />
                 </g>
             </svg>
+            <p>cameraroll</p>
+            <p>photos by <a href='http://nathanwentworth.co'>nathan wentworth</a></p>
         </header>
         <div class='content'>
             <?php

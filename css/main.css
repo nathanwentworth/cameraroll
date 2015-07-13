@@ -110,11 +110,12 @@ header {
     width: 100%;
 }
 p {
+    margin-top: 45px;
     margin-left: 45px;
 }
 
-p:first-child {
-    margin-top: 45px;
+p:last-child {
+    margin-top: 0;
 }
 
 img {
@@ -218,8 +219,19 @@ a:active {color: #676767;}
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 720px) {
+    svg {
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-left: 35px;
+        margin-top: 45px;
+    }
+    header {
+        height: 250px;
+    }
+
 }
 
 @media print,
