@@ -1,4 +1,7 @@
-<!doctype html>
+<?php
+    require_once 'Mobile-Detect-2.8.15/Mobile_Detect.php';
+    $detect = new Mobile_Detect;
+?>
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
@@ -32,19 +35,23 @@
         </header>
         <div class='content'>
             <?php
-                $smallimg = array();
-                foreach (glob("img/IMG_*-small.jpg") as $small) {
-                    $smallimg[] = $small;
+                if ($detect->isMobile()) {
+                    $img = array();
+                    foreach (glob("img/IMG_*-small.jpg") as $small) {
+                        $img[] = $small;
+                    }
                 }
-                $defaultimg = array();
-                foreach (glob("img/IMG_*-large.jpg") as $default) {
-                    $defaultimg[] = $default;
+                else {
+                    $img = array();
+                    foreach (glob("img/IMG_*-large.jpg") as $default) {
+                    $img[] = $default;
+                    }
                 }
 
-                $j = count($smallimg);
+                $j = count($img);
                 for($i = 0; $i < $j ; $i++) {
-                    print '<img src="' . $smallimg[$i] . '" srcset="' . $smallimg[$i] . ' 480w,' . $defaultimg[$i] . ' 1200w">';
-                    print '<noscript><img src="' . $defaultimg[$i] . '"></noscript>';
+                    print '<img src="' . $img[$i] . '">';
+                    print '<noscript><img src="' . $img[$i] . '"></noscript>';
 
                 }
             ?>
