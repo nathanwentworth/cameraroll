@@ -100,6 +100,7 @@ body {
 }
 
 svg {
+    animation: logo 1s 1;
     position: absolute;
     top: 45px;
     right: 45px;
@@ -134,8 +135,17 @@ a:visited {color: #3F3F3F;}
 a:hover {color: #676767;}
 a:active {color: #676767;}
 
-
-
+@keyframes logo {
+    0% {
+        transform: translateY(-300px);
+    }
+    40% {
+        transform: translateY(-300px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 
 
