@@ -56,6 +56,6 @@
                 }
             ?>
         </div>
-        <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
     </body>
 </html>
